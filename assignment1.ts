@@ -49,3 +49,14 @@ class Car extends Vehicle {
 }
 
 const myCar = new Car("Toyota", 2020, "Corolla");
+
+function processValue(value: string | number): number | undefined {
+  if (typeof value === "string") {
+    return Number(value.length);
+  } else if (typeof value === "number") {
+    return value * 2;
+  }
+}
+
+const processValueResult = processValue("1");
+console.log(processValueResult);
