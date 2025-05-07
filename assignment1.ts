@@ -59,4 +59,3 @@ function processValue(value: string | number): number | undefined {
 }
 
 const processValueResult = processValue("1");
-console.log(processValueResult);
